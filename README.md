@@ -46,6 +46,9 @@ Alternatively, You may clone the repository and run the app locally to use.
 * The app will start on your local server.
 * Run tests with: **npm test**
 
+## Guide on how to extend the functionalities further
+- [Document](https://docs.google.com/document/d/1o9df9ANIOAqBLctFK1CNlJhUcqP1BeI3aRs4cxmjbo8/edit?usp=sharing)
+
 
 ## API Documentation
 
