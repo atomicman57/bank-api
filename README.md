@@ -52,7 +52,7 @@ Alternatively, You may clone the repository and run the app locally to use.
 The application will start on `http://localhost:3000` by default.
 ## Available Routes
 ### Authentication
-#### POST /api/v1/user/signup
+#### POST /api/v1/users/signup
 
 Creates a new user account.
 ##### Request Body 
@@ -63,7 +63,7 @@ Creates a new user account.
 ##### Response 
 - `token` (string): The JWT token to be used for authentication. 
 - `user` (object): The newly created user object.
-#### POST /api/v1/user/login
+#### POST /api/v1/users/login
 
 Logs in a user.
 ##### Request Body 
@@ -72,18 +72,18 @@ Logs in a user.
 ##### Response 
 - `token` (string): The JWT token to be used for authentication. 
 - `user` (object): The user object.
-#### GET /api/v1/user/currentUser
+#### GET /api/v1/users/currentUser
 
 Gets the current user.
 ##### Response 
 - `user` (object): The current user object.
-#### GET /api/v1/user/balance
+#### GET /api/v1/users/balance
 
 Gets the balance of the current user.
 ##### Response 
 - `balance` (number): The current user's balance.
 ### Transactions
-#### GET /api/v1/transaction
+#### GET /api/v1/transactions
 
 Gets the transactions of the current user.
 ##### Query Parameters 
@@ -94,14 +94,14 @@ Gets the transactions of the current user.
 - `total` (number): The total number of transactions. 
 - `totalPages` (number): The total number of pages. 
 - `currentPage` (number): The current page number.
-#### POST /api/v1/transaction/fund
+#### POST /api/v1/transactions/fund
 
 Funds the current user's account.
 ##### Request Body 
 - `amount` (number): Required. The amount to fund the account with.
 ##### Response 
 - `user` (object): The updated user object.
-#### POST /api/v1/transaction/transfer
+#### POST /api/v1/transactions/transfer
 
 Transfers money from the current user's account to another user's account.
 ##### Request Body 
