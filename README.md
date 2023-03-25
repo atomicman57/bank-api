@@ -49,7 +49,7 @@ Alternatively, You may clone the repository and run the app locally to use.
 
 ## API Documentation
 
-The application will start on `http://localhost:3000` by default.
+The application will start on `http://localhost:4000` by default.
 ## Available Routes
 ### Authentication
 #### POST /api/v1/users/signup
