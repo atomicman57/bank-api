@@ -3,6 +3,7 @@ import { verify } from 'jsonwebtoken'
 import { getRepository } from 'typeorm'
 import { User } from '../entities/user.entity'
 import { UnauthorizedError } from '../utils/errors'
+import { config } from '../config'
 
 interface DecodedToken {
   userId: number
@@ -18,7 +19,7 @@ export const authMiddleware = () => {
       if (!token) {
         throw new UnauthorizedError('No token provided')
       }
-      const decoded = verify(token, process.env.JWT_SECRET) as DecodedToken
+      const decoded = verify(token, config.jwt.secret) as DecodedToken
 
       const userRepository = getRepository(User)
       const user = await userRepository.findOne({

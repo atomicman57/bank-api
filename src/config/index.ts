@@ -15,7 +15,7 @@ export const config = {
     port: parseInt(process.env.TEST_DB_PORT || '5432', 10),
     username: process.env.TEST_DB_USERNAME || '',
     password: process.env.TEST_DB_PASSWORD || '',
-    database: process.env.TEST_DB_NAME || 'money-transfer',
+    database: process.env.TEST_DB_NAME || 'money-transfer-test',
   },
   server: {
     port: parseInt(process.env.PORT || '4000', 10),

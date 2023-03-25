@@ -1,7 +1,7 @@
 import { UserController } from '../../controllers/user.controller'
 import { UserService } from '../../services/user.service'
 import { Request, Response } from 'express'
-import { Connection, createConnection } from 'typeorm'
+import { Connection } from 'typeorm'
 import { connectTestDatabase } from '../../utils/db'
 
 describe('UserController tests', () => {
